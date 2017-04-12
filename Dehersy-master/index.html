@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
   
+
 <style>
 	body {
 		background: rgb(255,197,120);
@@ -18,6 +19,11 @@
 		border: 4px solid black;
 		border-radius: 6px
 	}
+	.pole {
+		width: 50px;
+		height: 50px;
+	
+	}
 	
 	
   #draggable { width: 50px; height: 50px; padding: 0.5em; }
@@ -25,164 +31,132 @@
 </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
   <script>
   $( function() {
-	 $( "#draggable1a" ).draggable();
-	  $( "#draggable2a" ).draggable();
-	   $( "#draggable3a" ).draggable();
-	    $( "#draggable4a" ).draggable();
-	     $( "#draggable5a" ).draggable();
-		  $( "#draggable6a" ).draggable();
-		   $( "#draggable7a" ).draggable();
-			$( "#draggable8a" ).draggable();
-			 $( "#draggable9a" ).draggable();
-			  $( "#draggable10a" ).draggable();
-			   $( "#draggable11a" ).draggable();
-				$( "#draggable12a" ).draggable();
-				 $( "#draggable13a" ).draggable();
-				  $( "#draggable14a" ).draggable();
+  <!--Pionki gracza A !-->
+	 $( "#1a" ).draggable();
+	  $( "#2a" ).draggable();
+	   $( "#3a" ).draggable();
+	    $( "#4a" ).draggable();
+	     $( "#5a" ).draggable();
+		  $( "#6a" ).draggable();
+		   $( "#7a" ).draggable();
+			$( "#8a" ).draggable();
+			 $( "#9a" ).draggable();
+			  $( "#10a" ).draggable();
+			   $( "#11a" ).draggable();
+				$( "#12a" ).draggable();
+  <!--Pionki gracza B !-->
+	  $( "#1b" ).draggable();
+	   $( "#2b" ).draggable();
+	    $( "#3b" ).draggable();
+		 $( "#4b" ).draggable();
+		  $( "#5b" ).draggable();
+		   $( "#6b" ).draggable();
+			$( "#7b" ).draggable();
+			 $( "#8b" ).draggable();
+			  $( "#9b" ).draggable();
+			   $( "#10b" ).draggable();
+			    $( "#11b" ).draggable();
+			     $( "#12b" ).draggable();
   } );
   </script>
+ 
 </head>
 <body background=" rgb(255,197,120)">
- <table align="center" width="700px" height="550px" >
-	<tr> <!-- pierwsza rzad !-->
-		<td bgcolor="black">a1</td>
-		 <td bgcolor="white"><font color="white">a2</td>
-		  <td bgcolor="black">a3</td>
-		   <td bgcolor="white"><font color="white">a4</td>
-		    <td bgcolor="black">a5</td>
-			 <td bgcolor="white"><font color="white">a6</td>
-			  <td bgcolor="black">a7</td>
-			   <td bgcolor="white"><font color="white">a8</td> 
-			    <td bgcolor="black">a9</td>
-				 <td bgcolor="white"><font color="white">a10</td> 
+ <h1 style="font-family:cursive"><center><i>Dehersy</i><center></h1>
+  <button onclick="start('1a')">Zacznij gre</button>
+ <table align="center" width="700px" height="550px"  >
+	<tr> <!-- pierwszy rzad !-->
+		<td id="a1" bgcolor="black" align="center"> </td>
+		 <td id="a2" bgcolor="white" align="center"> <div id="1a" class="ui-widget-content"><img src="red.png"></div></td>
+		  <td id="a3" bgcolor="black" align="center"> </td>
+		   <td id="a4" bgcolor="white" align="center"> <div id="2a" class="ui-widget-content"><img src="red.png"></div></td>
+		    <td id="a5" bgcolor="black" align="center"> </td>
+			 <td id="a6" bgcolor="white" align="center"> <div id="3a" class="ui-widget-content"><img src="red.png"></div></td>
+			  <td id="a7" bgcolor="black" align="center"> </td>
+			   <td id="a8" bgcolor="white" align="center"> <div id="4a" class="ui-widget-content"><img src="red.png"></div></td> 
+
+
 	</tr>	
 	<tr> <!-- drugi rzad !-->
-		<td bgcolor="white"><font color="white">b1</td>
-		 <td bgcolor="black">b2</td>
-		  <td bgcolor="white"><font color="white">b3</td>
-		   <td bgcolor="black">b4</td>
-		    <td bgcolor="white"><font color="white">b5</td>
-			 <td bgcolor="black">b6</td>
-			  <td bgcolor="white"><font color="white">b7</td>
-			   <td bgcolor="black">b8</td> 
-			    <td bgcolor="white"><font color="white">b9</td>
-				 <td bgcolor="black">b10</td>
+		<td id="b1" bgcolor="white" align="center"> <div id="5a" class="ui-widget-content"><img src="red.png"></div></td></td> 
+		 <td id="b2" bgcolor="black" align="center"> </td>
+		  <td id="b3" bgcolor="white" align="center"> <div id="6a" class="ui-widget-content"><img src="red.png"></div></td></td>
+		   <td id="b4" bgcolor="black" align="center"> </td>
+		    <td id="b5" bgcolor="white" align="center"> <div id="7a" class="ui-widget-content"><img src="red.png"></div></td></td>
+			 <td id="b6" bgcolor="black" align="center"></td>
+			  <td id="b7" bgcolor="white" align="center"> <div id="8a" class="ui-widget-content"><img src="red.png"></div></td></td>
+			   <td id="b8" bgcolor="black" align="center"> </td> 
+
 	</tr>
 	<tr> <!-- trzeci rzad !-->
-		<td bgcolor="black">c1</td>
-		 <td bgcolor="white"><font color="white">c2</td>
-		  <td bgcolor="black">c3</td>
-		   <td bgcolor="white"><font color="white">c4</td>
-		    <td bgcolor="black">c5</td>
-			 <td bgcolor="white"><font color="white">c6</td>
-			  <td bgcolor="black">c7</td>
-			   <td bgcolor="white"><font color="white">c8</td> 
-			    <td bgcolor="black">c9</td>
-				 <td bgcolor="white"><font color="white">c10</td>
+		<td id="c1" bgcolor="black" align="center"></td>
+		 <td id="c2" bgcolor="white" align="center"><div id="9a" class="ui-widget-content"><img src="red.png"></div></td></td>
+		  <td id="c3" bgcolor="black" align="center"></td>
+		   <td id="c4" bgcolor="white" align="center"><div id="10a" class="ui-widget-content"><img src="red.png"></div></td></td>
+		    <td id="c5" bgcolor="black" align="center"></td>
+			 <td id="c6" bgcolor="white" align="center"><div id="11a" class="ui-widget-content"><img src="red.png"></div></td></td>
+			  <td id="c7" bgcolor="black" align="center"></td>
+			   <td id="c8" bgcolor="white" align="center"><div id="12a" class="ui-widget-content"><img src="red.png"></div></td></td> 
+
 	</tr>	
 	<tr> <!-- czwarty rzad !-->
-		<td bgcolor="white"><font color="white">d1</td>
-		 <td bgcolor="black">d2</td>
-		  <td bgcolor="white"><font color="white">d3</td>
-		   <td bgcolor="black">d4</td>
-		    <td bgcolor="white"><font color="white">d5</td>
-			 <td bgcolor="black">d6</td>
-			  <td bgcolor="white"><font color="white">d7</td>
-			   <td bgcolor="black">d8</td>  
-			    <td bgcolor="white"><font color="white">d9</td>
-				 <td bgcolor="black">d10</td>
+		<td class="pole" id="d1" bgcolor="white"align="center"></td>
+		 <td class="pole" id="d2" bgcolor="black" align="center"></td>
+		  <td class="pole" id="d3" bgcolor="white" align="center"></td>
+		   <td class="pole" id="d4" bgcolor="black" align="center"></td>
+		    <td class="pole" id="d5" bgcolor="white" align="center"></td>
+			 <td class="pole" id="d6" bgcolor="black" align="center"></td>
+			  <td class="pole" id="d7" bgcolor="white" align="center"></td>
+			   <td class="pole" id="d8" bgcolor="black" align="center"></td>  
+
 	</tr>
 	<tr> <!-- piaty rzad !-->
-		<td bgcolor="black">e1</td>
-		 <td bgcolor="white"><font color="white">e2</td>
-		  <td bgcolor="black">e3</td>
-		   <td bgcolor="white"><font color="white">e4</td>
-		    <td bgcolor="black">e5</td>
-			 <td bgcolor="white"><font color="white">e6</td>
-			  <td bgcolor="black">e7</td>
-			   <td bgcolor="white"><font color="white">e8</td>
-				<td bgcolor="black">e9</td>
-			     <td bgcolor="white"><font color="white">e10</td>
+		<td class="pole" id="e1" bgcolor="black"></td>
+		 <td class="pole" id="e2" bgcolor="white"></td>
+		  <td class="pole" id="e3" bgcolor="black"></td>
+		   <td class="pole" id="e4" bgcolor="white"></td>
+		    <td class="pole" id="e5" bgcolor="black"></td>
+			 <td class="pole" id="e6" bgcolor="white"></td>
+			  <td class="pole" id="e7" bgcolor="black"></td>
+			   <td class="pole" id="e8" bgcolor="white"></td>
+
 	</tr>
 	<tr> <!-- szosty rzad !-->
-		<td bgcolor="white"><font color="white">f1</td>
-		 <td bgcolor="black">f2</td>
-		  <td bgcolor="white"><font color="white">f3</td>
-		   <td bgcolor="black">f4</td>
-		    <td bgcolor="white"><font color="white">f5</td>
-			 <td bgcolor="black">f6</td>
-			  <td bgcolor="white"><font color="white">f7</td>
-			   <td bgcolor="black">f8</td>
-				<td bgcolor="white"><font color="white">f9</td>
-			     <td bgcolor="black">f10</td>
+		<td id="f1" bgcolor="white"align="center"><div id="1b" class="ui-widget-content"><img src="gold.png"></div></td>
+		 <td id="f2" bgcolor="black"></td>
+		  <td id="f3" bgcolor="white"align="center"><div id="2b" class="ui-widget-content"><img src="gold.png"></div></td>
+		   <td id="f4" bgcolor="black"></td>
+		    <td id="f5" bgcolor="white"align="center"><div id="3b" class="ui-widget-content"><img src="gold.png"></div></td>
+			 <td id="f6" bgcolor="black"></td>
+			  <td id="f7" bgcolor="white"align="center"><div id="4b" class="ui-widget-content"><img src="gold.png"></div></td>
+			   <td id="f8" bgcolor="black"></td>
+
 	</tr>	
 	<tr> <!-- siodmy rzad !-->
-		<td bgcolor="black">g1</td>
-		 <td bgcolor="white"><font color="white">g2</td>
-		  <td bgcolor="black">g3</td>
-		   <td bgcolor="white"><font color="white">g4</td>
-		    <td bgcolor="black">g5</td>
-			 <td bgcolor="white"><font color="white">g6</td>
-			  <td bgcolor="black">g7</td>
-			   <td bgcolor="white"><font color="white">g8</td>
-				<td bgcolor="black">g9</td>
-			     <td bgcolor="white"><font color="white">h10</td>
+		<td id="g1" bgcolor="black"></td>
+		 <td id="g2" bgcolor="white"align="center"><div id="5b" class="ui-widget-content"><img src="gold.png"></div></td>
+		  <td id="g3" bgcolor="black"></td>
+		   <td id="g4" bgcolor="white"align="center"><div id="6b" class="ui-widget-content"><img src="gold.png"></div></td>
+		    <td id="g5" bgcolor="black"></td>
+			 <td id="g6" bgcolor="white"align="center"><div id="7b" class="ui-widget-content"><img src="gold.png"></div></td>
+			  <td id="g7" bgcolor="black"></td>
+			   <td id="g8" bgcolor="white"align="center"><div id="8b" class="ui-widget-content"><img src="gold.png"></div></td>
+
 	</tr>
 	<tr> <!-- osmy rzad !-->
-		<td bgcolor="white"><font color="white">h1</td>
-		 <td bgcolor="black">h2</td>
-		  <td bgcolor="white"><font color="white">h3</td>
-		   <td bgcolor="black">h4</td>
-		    <td bgcolor="white"><font color="white">h5</td>
-			 <td bgcolor="black">h6</td>
-			  <td bgcolor="white"><font color="white">h7</td>
-			   <td bgcolor="black">h8</td>
-				<td bgcolor="white"><font color="white">h9</td>
-				 <td bgcolor="black">h10</td>
-	</tr>
-	<tr> <!-- dziewiaty rzad !-->
-		<td bgcolor="black">i1</td>
-		 <td bgcolor="white"><font color="white">i2</td>
-		  <td bgcolor="black">i3</td>
-		   <td bgcolor="white"><font color="white">i4</td>
-		    <td bgcolor="black">i5</td>
-			 <td bgcolor="white"><font color="white">i6</td>
-			  <td bgcolor="black">i7</td>
-			   <td bgcolor="white"><font color="white">i8</td>
-				<td bgcolor="black">i9</td>
-			     <td bgcolor="white"><font color="white">i10</td>
-	</tr>
-	<tr> <!-- dziesiaty rzad !-->
-		<td bgcolor="white"><font color="white">j1</td>
-		 <td bgcolor="black">j2</td>
-		  <td bgcolor="white"><font color="white">j3</td>
-		   <td bgcolor="black">j4</td>
-		    <td bgcolor="white"><font color="white">j5</td>
-			 <td bgcolor="black">j6</td>
-			  <td bgcolor="white"><font color="white">j7</td>
-			   <td bgcolor="black">j8</td>
-				<td bgcolor="white"><font color="white">j9</td>
-				 <td bgcolor="black">j10</td>
-			   
-	</tr>
+		<td id="h1" bgcolor="white"align="center"><div id="9b" class="ui-widget-content"><img src="gold.png"></div></td>
+		 <td id="h2" bgcolor="black"></td>
+		  <td id="h3" bgcolor="white"align="center"><div id="10b" class="ui-widget-content"><img src="gold.png"></div></td>
+		   <td id="h4" bgcolor="black"></td>
+		    <td id="h5" bgcolor="white"align="center"><div id="11b" class="ui-widget-content"><img src="gold.png"></div></td>
+			 <td id="h6" bgcolor="black"></td>
+			  <td id="h7" bgcolor="white"align="center"><div id="12b" class="ui-widget-content"><img src="gold.png"></div></td>
+			   <td id="h8" bgcolor="black"></td>
+
+	</tr>	
 </table>
-<!-- Pionki gracza A !-->
- <div id="draggable1a" class="ui-widget-content"><img src="red.png"></div>
-  <div id="draggable2a" class="ui-widget-content"><img src="red.png"></div>
-   <div id="draggable3a" class="ui-widget-content"><img src="red.png"></div>
-    <div id="draggable4a" class="ui-widget-content"><img src="red.png"></div>
-     <div id="draggable5a" class="ui-widget-content"><img src="red.png"></div>
-      <div id="draggable6a" class="ui-widget-content"><img src="red.png"></div>
-	   <div id="draggable7a" class="ui-widget-content"><img src="red.png"></div>
-		<div id="draggable8a" class="ui-widget-content"><img src="red.png"></div>
-		 <div id="draggable9a" class="ui-widget-content"><img src="red.png"></div>
-		  <div id="draggable10a" class="ui-widget-content"><img src="red.png"></div>
-		   <div id="draggable11a" class="ui-widget-content"><img src="red.png"></div>
-		    <div id="draggable12a" class="ui-widget-content"><img src="red.png"></div>
-			 <div id="draggable13a" class="ui-widget-content"><img src="red.png"></div>
-			  <div id="draggable14a" class="ui-widget-content"><img src="red.png"></div>
-<!-- Pionki gracza B !
 </body>
 </html>
